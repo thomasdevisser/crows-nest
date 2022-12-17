@@ -1,0 +1,23 @@
+{
+  "name": "crows-nest",
+  "version": "1.0.0",
+  "description": "An overview Electron application for my colleagues. Kind of like seeing everything from the crow's nest.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasdevisser/crows-nest.git"
+  },
+  "keywords": [],
+  "author": "Thomas de Visser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasdevisser/crows-nest/issues"
+  },
+  "homepage": "https://github.com/thomasdevisser/crows-nest#readme",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  }
+}

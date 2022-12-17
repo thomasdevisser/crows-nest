@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self';script-src 'self';font-src https://fonts.gstatic.com;style-src 'self' https://fonts.googleapis.com;style-src-elem 'self' https://fonts.googleapis.com"
+    />
+    <title>Crow's Nest</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="welcome">
+      <h1>Welcome back 🦜</h1>
+      <p id="welcome-message"></p>
+    </section>
+    <section class="panel float-wrapper">
+      <h2>Float</h2>
+      <div class="projects">
+        <div class="project">
+          <p>HMC Ziekenhuis</p>
+          <span class="time">6H</span>
+        </div>
+        <div class="project">
+          <p>Solutions 4 Delivery</p>
+          <span class="time">2H</span>
+        </div>
+        <div class="project support">
+          <p>Support Standy</p>
+          <span class="time">2H</span>
+        </div>
+      </div>
+    </section>
+    <section class="panel trello-wrapper">
+      <h2>Trello</h2>
+      <div class="tickets">
+        <article class="ticket">
+          <header>
+            <p class="client">HMC Ziekenhuis <span class="label prio">PRIO</span></p>
+            <span class="posted-on">Today</span>
+          </header>
+          <p class="author">Herbert posted:</p>
+          <p class="mention">@tomdevisser zou je naar deze checkboxes kunnen kijken?</p>
+          <a href="#" class="ticket-link">Go to this card</a>
+        </article>
+        <article class="ticket">
+          <header>
+            <p class="client">Brandweer</p>
+            <span class="posted-on">Yesterday</span>
+          </header>
+          <p class="author">Hans posted:</p>
+          <p class="mention">@tomdevisser er gaat iets nog niet goed met de API koppeling</p>
+          <a href="#" class="ticket-link">Go to this card</a>
+        </article>
+        <article class="ticket done">
+          <header>
+            <p class="client">Solutions 4 Delivery <span class="label done">Done</span></p>
+            <span class="posted-on">Dec 12th</span>
+          </header>
+          <p class="author">Tessa posted:</p>
+          <p class="mention">@tomdevisser thanks!</p>
+          <a href="#" class="ticket-link">Go to this card</a>
+        </article>
+      </div>
+    </section>
+    <section class="panel google-cal-wrapper">
+      <h2>Google Calendar</h2>
+      <div class="appointments">
+        <article class="appointment">
+          <header>
+            <p class="event">Dev Standup</p>
+            <span class="starts-at">10:00</span>
+          </header>
+          <a href="#" class="appointment-link">Join Google Meet</a>
+        </article>
+        <article class="appointment">
+          <header>
+            <p class="event">Briefing Den Bosch</p>
+            <span class="starts-at">14:15</span>
+          </header>
+          <a href="#" class="appointment-link">Join Google Meet</a>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>

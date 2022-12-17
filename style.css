@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+:root {
+  --color-blue: #243363;
+  --color-green: #3dde96;
+  --color-blue-light: #47b3c2;
+  --color-purple: #423f9d;
+  --color-purple-dark: #1a264a;
+}
+
+* {
+  font-family: "Ubuntu";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+}
+
+p {
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--color-blue);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+body::after {
+  background-image: url("./assets/background-shape.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  inset: 0;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+}
+
+.panel {
+  background-color: var(--color-purple-dark);
+  border-radius: 4px;
+  min-height: 100px;
+  padding: 1rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.5rem;
+}
+
+/* Float */
+.float-wrapper .projects {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+}
+
+.float-wrapper .projects .project {
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--color-purple);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.float-wrapper .projects .project.support {
+  background-color: var(--color-blue-light);
+}
+
+.float-wrapper .project p {
+  margin: 0;
+}
+
+.float-wrapper .project .time {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+/* Trello */
+.trello-wrapper .tickets {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+}
+
+.trello-wrapper .tickets .ticket {
+  border-radius: 4px;
+  background-color: var(--color-blue);
+  padding: 1rem;
+}
+
+.trello-wrapper .tickets .ticket header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.trello-wrapper .tickets .ticket header .client {
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  gap: 0.5rem;
+}
+
+.trello-wrapper .tickets .ticket header .client .label {
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+}
+
+.trello-wrapper .tickets .ticket header .client .label.done {
+  color: var(--color-green);
+  border: 1px solid var(--color-green);
+}
+
+.trello-wrapper .tickets .ticket header .client .label.prio {
+  color: var(--color-blue-light);
+  border: 1px solid var(--color-blue-light);
+}
+
+.trello-wrapper .tickets .ticket header .posted-on {
+  font-size: 0.75rem;
+}
+
+.trello-wrapper .tickets .ticket .author {
+  font-size: 0.75rem;
+}
+
+.trello-wrapper .tickets .ticket p {
+  margin: 0;
+}
+
+.trello-wrapper .tickets .ticket .ticket-link {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Google Calendar */
+.google-cal-wrapper .appointments {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+}
+
+.google-cal-wrapper .appointments .appointment {
+  border-radius: 4px;
+  background-color: var(--color-blue);
+  padding: 1rem;
+}
+
+.google-cal-wrapper .appointments .appointment header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.google-cal-wrapper .appointments .appointment header .event {
+  font-weight: 700;
+}
+
+.google-cal-wrapper .appointments .appointment header .starts-at {
+  font-size: 0.875rem;
+}
+
+.google-cal-wrapper .appointments .appointment p {
+  margin: 0;
+}
+
+.google-cal-wrapper .appointments .appointment .appointment-link {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
